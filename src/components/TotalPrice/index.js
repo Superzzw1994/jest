@@ -4,10 +4,10 @@ const TotalPrice = ({income, outcome}) => {
   return (
     <div className="row">
       <div className="col">
-        <p>收入:{income}</p>
+        <p className='income'>收入:<span>{income}</span></p>
       </div>
       <div className="col">
-        <p>支出:{outcome}</p>
+        <p className='outcome'>支出:<span>{outcome}</span></p>
       </div>
     </div>
   )

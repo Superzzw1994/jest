@@ -5,7 +5,7 @@ import ViewTab from '../../components/ViewTab';
 import TotalPrice from '../../components/TotalPrice';
 import DatePicker from '../../components/DatePicker';
 import { ParseDate, LIST_VIEW, padLeft } from '../../util/util';
-const items = [
+export const items = [
   {
     'id': 1,
     'title': 'travel',
@@ -28,7 +28,7 @@ const items = [
     'cid': '3'
   }
 ]
-const categoies = {
+export const categoies = {
   '1': {
     'id': 1,
     'name': '旅行',
@@ -94,7 +94,6 @@ export default class Home extends Component {
   }
   render () {
     const { items, currentDate, tabView} = this.state
-    console.log(tabView)
     const cid = items.map(item => {
       item.category = categoies[item.cid]
       return item
